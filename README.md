@@ -1,7 +1,17 @@
 docker-openldap
 ===============
 
-The image is based on Debian stable ("stretch" at the moment). The Dockerfile is
+This is intended to be a *stable* Docker OpenLDAP image. Most
+importantly, functionality will only change with a change of the image tag.
+
+This is a fork of [dinkel/openldap](https://hub.docker.com/r/dinkel/openldap/), 
+which unfotunately has not gotten a new tag for 2 years, yet has
+had several updates which broke functionality for people.
+
+My intention is to do my best to keep this image in feature-sync
+with dinkel/openldap, yet new features will be released in images with separate tags.
+
+That image was based on Debian stable ("stretch" at the moment). The Dockerfile is
 inspired by [cnry/openldap](https://registry.hub.docker.com/u/cnry/openldap/),
 but as said before, running a stable Debian and be a little less verbose, but
 more complete in the configuration.
